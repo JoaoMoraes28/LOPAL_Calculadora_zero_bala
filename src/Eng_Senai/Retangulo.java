@@ -34,10 +34,16 @@ public class Retangulo {
 	}
 	
 	public void mostrarResultados() {
-		System.out.println("O valor da base deste retângulo é " + base);
-		System.out.println("O valor da altura deste retângulo é " + altura);
-		System.out.println("O valor da área deste retângulo é " + calcularArea());
-		System.out.println("O valor do perímetro deste retângulo é " + calcularPerimetro());
+		System.out.println("");
+		System.out.println("-----------------------");
+		System.out.println("DADOS DO RETANGULO");
+		System.out.println("-----------------------");
+		System.out.println("BASE: " + base);	
+		System.out.println("ALTURA: " + altura);
+		System.out.println("ÁREA: " + calcularArea());
+		System.out.println("PERÍMETRO: " + calcularPerimetro());
+		System.out.println("-----------------------");
+		System.out.println("");
 	}
 	
 	

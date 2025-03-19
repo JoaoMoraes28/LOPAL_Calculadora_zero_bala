@@ -20,8 +20,14 @@ public class Triangulo {
 	}
 	
 	public void mostrarResultados() {
-		System.out.println("O valor da base deste triângulo é " + base);
-		System.out.println("Ovalor da altura deste triângulo é " + altura);
-		System.out.println("O valor da área deste triângulo é " + calcularArea());
+		System.out.println("");
+		System.out.println("-----------------------");
+		System.out.println("DADOS DO TRIÂNGULO");
+		System.out.println("-----------------------");
+		System.out.println("BASE: " + base);
+		System.out.println("ALTURA: " + altura);
+		System.out.println("ÁREA: " + calcularArea());
+		System.out.println("-----------------------");
+		System.out.println("");
 	}
 }

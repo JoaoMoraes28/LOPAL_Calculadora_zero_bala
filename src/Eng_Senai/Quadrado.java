@@ -30,9 +30,15 @@ public class Quadrado {
 	}
 	
 	public void mostrarResultados() {
-		System.out.println("O valor do lado do quadrado é " + lado);
-		System.out.println("O valor da área deste quadrado é igual a " + calcularAreaQuadrado());
-		System.out.println("O valor do perímetro deste quadrado é igual a " + calculcarPerimetroQuadrado());
+		System.out.println("");
+		System.out.println("-----------------------");
+		System.out.println("DADOS DO QUADRADO");
+		System.out.println("-----------------------");
+		System.out.println("LADO: " + lado);
+		System.out.println("PERÍMETRO: " + calculcarPerimetroQuadrado());
+		System.out.println("ÁREA: " + calcularAreaQuadrado());
+		System.out.println("-----------------------");
+		System.out.println("");
 	}
 	
 }
