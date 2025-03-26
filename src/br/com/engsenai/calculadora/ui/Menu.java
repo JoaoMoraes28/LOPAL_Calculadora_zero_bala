@@ -7,7 +7,9 @@ import br.com.engsenai.dao.QuadradoDao;
 import br.com.engsenai.dao.RetanguloDao;
 
 public class Menu {
-
+	
+	static Scanner leitor = new Scanner(System.in);
+	
 	public static void mostrarMenu() {
 		
 		System.out.println("---------------------------");
@@ -22,7 +24,7 @@ public class Menu {
 		System.out.print("Escolha uma opção (1 - 5): ");
 		
 		
-		Scanner leitor = new Scanner(System.in);
+		
 		
 		int opcao = leitor.nextInt();
 		
@@ -32,6 +34,26 @@ public class Menu {
 		} else if (opcao == 2) {
 			RetanguloDao dao = new RetanguloDao();
 			dao.criarRetangulo();
+		}
+	}
+	
+	public static void saidaMenu() {
+		 
+		String resposta = "";
+		
+		while (!resposta.equals("s") || !resposta.equals("s")) {
+			System.out.print("Digite C para continuar ou qualquer ou S para sair?... ");
+		
+			resposta = leitor.next();
+			
+		}
+		
+		if (resposta.equals("s")) {
+			Menu menu = new Menu();
+			menu.mostrarMenu();
+			
+		} else {
+			System.out.println("Programa paro aí hein...");
 		}
 	}
 	
